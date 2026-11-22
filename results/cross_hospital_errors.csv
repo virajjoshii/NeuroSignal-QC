@@ -1,0 +1,8 @@
+Hospital,Subject,Category,Store,Sample Index,Relative Mains Power (%),Local Prominence (dB),Detected Peak (Hz),Peak Offset (Hz),Patient_ID,Predicted_Powerline,Actual_Powerline,Transfer,Error_Type
+Mayo,005,Physiological,sub-005/ieeg/sub-005_task-MachineLearningEEG_run-002_ieeg.zarr,1818000,1.5462521709787256,18.648082965464056,60.05859375,0.05859375,Mayo_005,True,False,FNUSA -> Mayo,Flagged Other Category
+Mayo,020,Artifact,sub-020/ieeg/sub-020_task-MachineLearningEEG_run-004_ieeg.zarr,231000,1.9026374685579255,26.396196993773412,60.05859375,0.05859375,Mayo_020,True,False,FNUSA -> Mayo,Flagged Other Category
+Mayo,000,Artifact,sub-000/ieeg/sub-000_task-MachineLearningEEG_run-001_ieeg.zarr,420000,4.625368974480121,11.178924670180251,58.10546875,-1.89453125,Mayo_000,True,False,FNUSA -> Mayo,Flagged Other Category
+Mayo,020,Artifact,sub-020/ieeg/sub-020_task-MachineLearningEEG_run-006_ieeg.zarr,261000,1.5666775058282656,20.505114814783234,60.05859375,0.05859375,Mayo_020,True,False,FNUSA -> Mayo,Flagged Other Category
+Mayo,016,Power-line,sub-016/ieeg/sub-016_task-MachineLearningEEG_run-004_ieeg.zarr,54000,0.06518686725886984,14.68918147885945,60.05859375,0.05859375,Mayo_016,False,True,FNUSA -> Mayo,Missed Power-line
+Mayo,012,Power-line,sub-012/ieeg/sub-012_task-MachineLearningEEG_run-008_ieeg.zarr,1467000,0.27692992827798374,30.565365379004366,60.05859375,0.05859375,Mayo_012,False,True,FNUSA -> Mayo,Missed Power-line
+Mayo,012,Power-line,sub-012/ieeg/sub-012_task-MachineLearningEEG_run-003_ieeg.zarr,729000,0.833814312770546,32.028073899494515,60.05859375,0.05859375,Mayo_012,False,True,FNUSA -> Mayo,Missed Power-line

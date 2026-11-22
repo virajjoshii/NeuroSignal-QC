@@ -1,0 +1,7 @@
+Transfer,Metric,Numerator,Denominator,Estimate (%),95% CI Lower,95% CI Upper
+Mayo -> FNUSA,Power-line sensitivity,15,15,100.0,78.1980639089466,100.0
+Mayo -> FNUSA,Non-power-line specificity,90,90,100.0,95.98410803842253,100.0
+Mayo -> FNUSA,Pathological flag rate,0,30,0.0,0.0,11.570330822202779
+FNUSA -> Mayo,Power-line sensitivity,27,30,90.0,73.47115495257918,97.88828629702773
+FNUSA -> Mayo,Non-power-line specificity,86,90,95.55555555555556,89.00991731219862,98.77594721499887
+FNUSA -> Mayo,Pathological flag rate,0,30,0.0,0.0,11.570330822202779

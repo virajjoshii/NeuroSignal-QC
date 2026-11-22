@@ -1,0 +1,123 @@
+{
+    "project": "NeuroSignal-QC",
+    "title": "Interpretable Power-Line Interference Screening in Intracranial EEG",
+    "study_type": "Retrospective exploratory signal-processing investigation",
+    "datasets": {
+        "Mayo": {
+            "dataset_id": "nm000182",
+            "source_commit": "a521c4b35cb2c48f1f38f9eea03866534eb654f4",
+            "recording_stores": 257
+        },
+        "FNUSA": {
+            "dataset_id": "nm000183",
+            "source_commit": "fa24384f3b9cd1cdbbba71468ed33fca1c8e2481",
+            "recording_stores": 632
+        }
+    },
+    "dataset_characteristics": {
+        "signal_type": "Intracranial EEG",
+        "original_sampling_rate_hz": 5000,
+        "analyzed_sampling_rate_hz": 1000,
+        "segment_duration_seconds": 3,
+        "original_dataset_segments": 348300,
+        "exploratory_pilot_clips": 45,
+        "expanded_analysis_clips": 225,
+        "expanded_analysis_participants": 38,
+        "hospitals": 2
+    },
+    "spectral_processing": {
+        "method": "Welch PSD",
+        "window": "Hann",
+        "nperseg": 2048,
+        "noverlap": 1024,
+        "scaling": "density",
+        "total_power_band_hz": [
+            1,
+            150
+        ],
+        "mains_search_width_hz": 2,
+        "background_offsets_hz": [
+            [
+                -15,
+                -5
+            ],
+            [
+                5,
+                15
+            ]
+        ]
+    },
+    "features": [
+        "Relative mains-frequency power (%)",
+        "Local spectral prominence (dB)"
+    ],
+    "detector": {
+        "type": "Interpretable threshold-based detector",
+        "decision_rule": "AND",
+        "threshold_calibration": "95th percentile of non-power-line development recordings",
+        "hospital_mains_frequencies_hz": {
+            "Mayo": 60,
+            "FNUSA": 50
+        }
+    },
+    "development_evaluation": {
+        "development_clips": 154,
+        "evaluation_clips": 71,
+        "development_participants": 28,
+        "evaluation_participants": 10,
+        "participant_overlap": 0
+    },
+    "cross_hospital_results": [
+        {
+            "Source": "Mayo",
+            "Target": "FNUSA",
+            "Source Clips": 120,
+            "Source Participants": 24,
+            "Target Clips": 105,
+            "Target Participants": 14,
+            "Power Threshold (%)": 1.3884764926682356,
+            "Prominence Threshold (dB)": 24.639144813798925,
+            "TP": 15,
+            "FN": 0,
+            "FP": 0,
+            "TN": 90,
+            "Sensitivity (%)": 100.0,
+            "Specificity (%)": 100.0,
+            "Precision (%)": 100.0,
+            "Pathological Total": 30,
+            "Pathological Flagged": 0,
+            "Pathological FPR (%)": 0.0
+        },
+        {
+            "Source": "FNUSA",
+            "Target": "Mayo",
+            "Source Clips": 105,
+            "Source Participants": 14,
+            "Target Clips": 120,
+            "Target Participants": 24,
+            "Power Threshold (%)": 1.0765419979259483,
+            "Prominence Threshold (dB)": 10.34512556085012,
+            "TP": 27,
+            "FN": 3,
+            "FP": 4,
+            "TN": 86,
+            "Sensitivity (%)": 90.0,
+            "Specificity (%)": 95.55555555555556,
+            "Precision (%)": 87.09677419354838,
+            "Pathological Total": 30,
+            "Pathological Flagged": 0,
+            "Pathological FPR (%)": 0.0
+        }
+    ],
+    "limitations": [
+        "Small, selectively sampled research subset",
+        "Standardized and resampled signal representation",
+        "Some participants contribute multiple clips",
+        "Exploratory feature analysis preceded evaluation splits",
+        "Cross-hospital transfer is retrospective",
+        "Only power-line interference was modeled",
+        "No actual signal cleaning was performed",
+        "No clinical validation",
+        "No demonstrated preservation of pathological waveforms"
+    ]
+}

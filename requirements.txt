@@ -1,0 +1,12 @@
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.16.3
+matplotlib==3.10.0
+requests==2.32.4
+pyarrow==23.0.1
+s3fs==2026.9.0
+fsspec==2026.9.0
+zarr==3.4.2
+nbformat==5.11.1
+nbclient==0.10.4
+ipykernel==6.17.1

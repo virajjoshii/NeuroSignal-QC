@@ -1,0 +1,3 @@
+Source,Target,Source Clips,Source Participants,Target Clips,Target Participants,Power Threshold (%),Prominence Threshold (dB),TP,FN,FP,TN,Sensitivity (%),Specificity (%),Precision (%),Pathological Total,Pathological Flagged,Pathological FPR (%)
+Mayo,FNUSA,120,24,105,14,1.3884764926682356,24.639144813798925,15,0,0,90,100.0,100.0,100.0,30,0,0.0
+FNUSA,Mayo,105,14,120,24,1.0765419979259483,10.34512556085012,27,3,4,86,90.0,95.55555555555556,87.09677419354838,30,0,0.0

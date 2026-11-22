@@ -1,0 +1,3 @@
+Transfer,Source Participants,Target Participants,Target Clips,Power-line Detected,Power-line Total,Sensitivity (%),Sensitivity CI Lower,Sensitivity CI Upper,Specificity (%),Specificity CI Lower,Specificity CI Upper,False Positives,Pathological Flagged,Pathological Total,Participants Fully Detected,Power-line Participants,Participant Complete Detection (%),Participant CI Lower,Participant CI Upper
+Mayo -> FNUSA,24,14,105,15,15,100.0,78.1980639089466,100.0,100.0,95.98410803842253,100.0,0,0,30,3,3,100.0,29.240177382128664,100.0
+FNUSA -> Mayo,14,24,120,27,30,90.0,73.47115495257918,97.88828629702773,95.55555555555556,89.00991731219862,98.77594721499887,4,0,30,6,8,75.0,34.91442055871758,96.81459737500558

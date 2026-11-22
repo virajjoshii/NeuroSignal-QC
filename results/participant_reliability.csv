@@ -1,0 +1,7 @@
+Transfer,Metric,Participants,Events,Rate (%),95% CI Lower,95% CI Upper
+FNUSA -> Mayo,All Power-line Clips Detected,8,6,75.0,34.91442055871758,96.81459737500558
+FNUSA -> Mayo,Any False Alarm,18,3,16.666666666666668,3.5785083121574677,41.41774913947741
+FNUSA -> Mayo,Any Pathological Flag,6,0,0.0,0.0,45.92581264399005
+Mayo -> FNUSA,All Power-line Clips Detected,3,3,100.0,29.240177382128664,100.0
+Mayo -> FNUSA,Any False Alarm,13,0,0.0,0.0,24.705263800047096
+Mayo -> FNUSA,Any Pathological Flag,12,0,0.0,0.0,26.464846939705115
